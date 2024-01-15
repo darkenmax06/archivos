@@ -1,0 +1,22 @@
+.bit-loader{
+  border: 5px solid var(--gray1);
+  border-radius: 50%;
+  border-top: 5px solid var(--gray2);
+  flex-shrink: 0;
+  display: block;
+
+  animation-name: girar;
+  animation-iteration-count: infinite;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes girar {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}

@@ -1,0 +1,32 @@
+.create-some{
+  display: grid;
+  place-content: center;
+  min-height: 100vh;
+  padding: var(--xl) var(--m);
+}
+
+.create-some__form{
+  padding: var(--m);
+  background: var(--white2);
+  display: flex;
+  flex-direction: column;
+  gap: var(--l);
+  width: 400px;
+}
+
+.create-some input {
+  display: none;
+}
+
+.create-some__label{
+  padding: var(--xl);
+  border-radius: var(--xs);
+  border: 5px dashed var(--gray1);
+  text-align: center;
+}
+
+.create-some__infos{
+  display: flex;
+  flex-direction: column;
+  gap: var(--xs);
+}

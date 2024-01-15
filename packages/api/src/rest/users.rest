@@ -1,0 +1,38 @@
+### GET ALL
+GET http://localhost:1234/api/users
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NWEyZmU5NDBhYWExNDczNDk0MTE5NjMiLCJpYXQiOjE3MDUxODA5OTZ9.9gcQwBzdNugBhbpDhAQTwmx_e1ZME0axY_HDXQExRG8
+
+### GET BY ID
+GET http://localhost:1234/api/users/65a2ece7d2323b2d9c7f9969
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI0YmZjNDE5Ny05MjJlLTExZWUtYTEzYS01Yzg3OWNkNmQ4NDYiLCJpYXQiOjE3MDE2NDY1Nzd9.so6ZquqTFYb-t4TL1YUQ5L5swaDImMZp8mueiz9AP14
+
+### CREATE
+POST http://localhost:1234/api/users
+Content-Type: application/json
+
+{
+  "name":"pablo",
+  "lastName": "cabil",
+  "userName": "pabloCabil",
+  "password": "12345678",
+  "admin": false,
+  "secret": "dark"
+}
+
+### UPDATE
+PATCH http://localhost:1234/api/users/65a2fea50aaa147349411966
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NWEyZmU5NDBhYWExNDczNDk0MTE5NjMiLCJpYXQiOjE3MDUxODA5OTZ9.9gcQwBzdNugBhbpDhAQTwmx_e1ZME0axY_HDXQExRG8
+
+
+{
+  "name":"pablo",
+  "lastName": "cabil",
+  "userName": "pabloEscobar",
+  "password": "12345678",
+  "disable": false
+}
+
+### DELETE
+DELETE http://localhost:1234/api/users/65a2ead42dccc23c018932b0
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI0YmZjNDE5Ny05MjJlLTExZWUtYTEzYS01Yzg3OWNkNmQ4NDYiLCJpYXQiOjE3MDE2NDY1Nzd9.so6ZquqTFYb-t4TL1YUQ5L5swaDImMZp8mueiz9AP14

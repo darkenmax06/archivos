@@ -1,0 +1,56 @@
+GET http://localhost:1234/api/registers/?hcn=26
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NWEyZmU5NDBhYWExNDczNDk0MTE5NjMiLCJpYXQiOjE3MDUxODA5OTZ9.9gcQwBzdNugBhbpDhAQTwmx_e1ZME0axY_HDXQExRG8
+
+
+###
+POST http://localhost:1234/api/registers/some
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NWEyZmVhNTBhYWExNDczNDk0MTE5NjYiLCJpYXQiOjE3MDUxODQzOTF9.MvG4jZ38qn8WFOkytv5uJ89-8LjHL_OQeB1dvyA46J4
+
+
+[
+  {
+    "hcn": "13",
+    "fechaDeIngreso": "2023-10-17T00:00:00.000Z",
+    "ubicacion": "CH-0001-0008"
+  },
+    {
+    "hcn": "26",
+    "fechaDeIngreso": "10/10/23",
+    "ubicacion": "CH-0001-0008",
+    "fechaDeRecibo": "10/22/23",
+    "patologia": "murio"
+  }
+]
+
+###
+POST http://localhost:1234/api/registers/
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NWEyZmVhNTBhYWExNDczNDk0MTE5NjYiLCJpYXQiOjE3MDUxODQzOTF9.MvG4jZ38qn8WFOkytv5uJ89-8LjHL_OQeB1dvyA46J4
+
+
+{
+    "hcn": "26",
+    "referencia": "a",
+    "fechaDeIngreso": "10/10/23",
+    "ubicacion": "CH-0001-0008",
+    "fechaDeRecibo": "10/22/23",
+    "patologia": "murio"
+}
+
+###
+PATCH http://localhost:1234/api/registers/65a30c9fe06ce0eb5db7f61d
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NWEyZmVhNTBhYWExNDczNDk0MTE5NjYiLCJpYXQiOjE3MDUxODQzOTF9.MvG4jZ38qn8WFOkytv5uJ89-8LjHL_OQeB1dvyA46J4
+
+
+{
+    "hcn": "26",
+    "fechaDeIngreso": "10/10/23",
+    "ubicacion": "CH-0001-0022"
+}
+
+
+###
+DELETE http://localhost:1234/api/registers/65a30c9fe06ce0eb5db7f61d
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NWEyZmVhNTBhYWExNDczNDk0MTE5NjYiLCJpYXQiOjE3MDUxODQzOTF9.MvG4jZ38qn8WFOkytv5uJ89-8LjHL_OQeB1dvyA46J4

@@ -1,0 +1,22 @@
+version: '3.8'
+services:
+  app:
+    build: 
+      context: .
+      dockerfile: Dockerfile.dev
+    ports:
+      - 1234:1234
+      - 5173:5173
+    depends_on:
+      - db
+    links:
+      - db
+    volumes:
+      - .:/home/app
+  db:
+    image: mongo:4.4.7
+    ports:
+      - 27017:27017
+    environment:
+      - MONGO_INITDB_ROOT_USERNAME=root
+      - MONGO_INITDB_ROOT_PASSWORD=root

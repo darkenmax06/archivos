@@ -1,0 +1,7 @@
+.create{
+  display: grid;
+  place-content: center;
+  min-height: 100vh;
+  padding: var(--xl) var(--s);
+}
+

@@ -1,0 +1,33 @@
+.card{
+  display: flex;
+  flex-direction: column;
+  gap: var(--s);
+  background-color: var(--gray);
+  padding: var(--s) var(--s) ;
+  border-radius: var(--xs);
+}
+
+.card__span{
+  width: 100%;
+  justify-content: center;
+  text-align: center;
+}
+
+.card__info{
+  list-style: none;
+}
+
+.card__span-patologia{
+  width: 100%;
+  flex-grow: 1;
+}
+
+.card__actions{
+  display: flex;
+  gap: var(--xs);
+  justify-content: space-between;
+}
+
+.card__actions a{
+  text-decoration: none;
+}

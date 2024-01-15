@@ -1,0 +1,6 @@
+.label{
+  display: flex;
+  text-align: start;
+  flex-direction: column;
+  gap: var(--xs);
+}

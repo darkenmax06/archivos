@@ -1,0 +1,21 @@
+.search{
+  padding: var(--xl) var(--m);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--l);
+}
+
+.search__results{
+  display: grid;
+  gap: var(--s);
+  grid-template-columns: repeat(auto-fill, 350px);
+  width: 100%;
+  justify-content: center;
+}
+
+@media (width <= 500px) {
+  .search{
+    padding: var(--xl) var(--s) ;
+  }
+}
